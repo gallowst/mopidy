@@ -1,0 +1,23 @@
+# https://github.com/mopidy/mopidy/releases
+Mopidy==3.4.1
+
+# https://github.com/jellyfin/mopidy-jellyfin
+Mopidy-Jellyfin==1.0.3
+
+# https://github.com/jaedb/Iris/releases
+#Mopidy-Iris==3.64.0
+
+# https://github.com/tkem/mopidy-mobile/tags
+#Mopidy-Mobile==1.10.0
+
+# https://github.com/mopidy/mopidy-mpd/releases
+#Mopidy-MPD==3.3.0
+
+# https://github.com/tkem/mopidy-podcast/tags
+#Mopidy-Podcast==3.0.1
+
+# https://github.com/mopidy/mopidy-scrobbler/releases
+#Mopidy-Scrobbler==2.0.1
+
+# https://github.com/mopidy/mopidy-spotify/releases
+#Mopidy-Spotify==4.1.1
