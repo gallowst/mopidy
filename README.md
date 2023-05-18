@@ -1,5 +1,7 @@
 # Mopidy with Jellyfin Plugin Docker Container
 
+[![Build Status](https://dev.azure.com/gallowst/docker/_apis/build/status%2FBuild%20and%20push%20Mopidy?branchName=main)](https://dev.azure.com/gallowst/docker/_build/latest?definitionId=32&branchName=main)
+
 Inspired by this [repo](https://github.com/jjok/my-mopidy-setup) a Dockerised Mopidy client with the Jellyfin plugin.
 
 Reguires an appropriate `mopidy.conf` passing to the container at `/root/.config/mopidy/mopidy.conf`
