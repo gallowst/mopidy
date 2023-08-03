@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.18.2
 LABEL description="Mopidy and Jellyfin on Alpine"
 
 RUN apk -U --no-cache add \
