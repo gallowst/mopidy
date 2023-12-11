@@ -1,13 +1,13 @@
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-schedules:
-- cron: "15 23 * * 0"
-  displayName: "Weekly Sunday build"
-  branches:
-    include:
-    - main
-  always: "true"
+# schedules:
+# - cron: "15 23 * * 0"
+#   displayName: "Weekly Sunday build"
+#   branches:
+#     include:
+#     - main
+#   always: "true"
 
 resources:
 - repo: self
