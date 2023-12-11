@@ -1,5 +1,5 @@
 FROM alpine:3.18
-LABEL description="Mopidy and Jellyfin on Alpine"
+LABEL description="Mopidy and Jellyfin on Alpine with Web Client"
 
 RUN apk -U --no-cache add \
     libtool \
@@ -19,13 +19,17 @@ RUN apk -U --no-cache add \
 
 COPY requirements.txt requirements.txt
 
-RUN pip3 install -r requirements.txt \
-    && rm -rf ~/.cache/pip
+RUN adduser -u 1001 -D mopidy
 
-VOLUME ["/root/.cache/mopidy", "/root/.local/share/mopidy"]
+USER mopidy
+
+RUN pip3 install -r requirements.txt && rm -rf ~/.cache/pip
+
+VOLUME ["/home/mopidy/.cache/mopidy", "/home/mopidy/.local/share/mopidy"]
 
 ENV TZ=Europe/London
 
 EXPOSE 6600 6680
 
-ENTRYPOINT ["mopidy"]
+ENTRYPOINT ["/home/mopidy/.local/bin/mopidy"]
+#CMD ["/bin/sh"]
