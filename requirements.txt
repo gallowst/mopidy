@@ -1,5 +1,8 @@
 # https://github.com/mopidy/mopidy/releases
-Mopidy==3.4.1
+Mopidy==3.4.2
 
 # https://github.com/jellyfin/mopidy-jellyfin
 Mopidy-Jellyfin==1.0.3
+
+# https://mopidy.com/ext/musicbox-webclient/
+Mopidy-MusicBox-Webclient
